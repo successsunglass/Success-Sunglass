@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>সানগ্লাস বিক্রয় লেন্ডিং পেইজ</title>
+  <style>
+    body {margin:0; font-family:'Poppins',sans-serif; color:#333; background:#f9f9f9;}
+    .hero {height:100vh; background:url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:#fff;}
+    .hero h1 {font-size:3rem; margin:0 20px; background:rgba(0,0,0,0.5); padding:20px; border-radius:10px;}
+    .cta-button {margin-top:30px; background:gold; color:#000; padding:15px 35px; font-size:1.2rem; border:none; border-radius:50px; cursor:pointer; text-decoration:none;}
+    .cta-button:hover {background:#f1c40f;}
+    .section {max-width:1200px; margin:60px auto; padding:0 20px;}
+    .features {display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; text-align:center;}
+    .feature {flex:1 1 calc(25% - 20px); background:#fff; border-radius:10px; padding:30px 20px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+    .feature h3 {margin-top:15px; font-size:1.1rem;}
+    .products {display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px;}
+    .product-card {background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1); text-align:center;}
+    .product-card img {width:100%; height:200px; object-fit:cover;}
+    .product-card h4 {margin:15px 0 10px;}
+    .product-card .price {font-weight:bold; color:#e74c3c;}
+    .testimonial, .video-section, .order-form {text-align:center; margin:60px 0;}
+    .testimonial p {font-style:italic;}
+    .order-form input, .order-form button {width:90%; max-width:400px; padding:15px; margin:10px 0; border-radius:8px; border:1px solid #ccc; font-size:1rem;}
+    .order-form button {background:gold; color:black; border:none; cursor:pointer;}
+    .order-form button:hover {background:#f1c40f;}
+    footer {background:#222; color:#fff; text-align:center; padding:30px 20px;}
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>সানগ্লাস, চশমা এবং পাওয়ার লেন্স – এক জায়গায় সেরা মানে!</h1>
+    <a href="#order" class="cta-button">Order Now</a>
+  </section>
+  <section class="section features">
+    <div class="feature"><img src="https://img.icons8.com/ios-filled/50/000000/sun.png" alt="UV"/><h3>UV প্রটেকশন</h3></div>
+    <div class="feature"><img src="https://img.icons8.com/ios-filled/50/000000/eyeglasses.png" alt="Trendy"/><h3>ট্রেন্ডি ডিজাইন</h3></div>
+    <div class="feature"><img src="https://img.icons8.com/ios-filled/50/000000/reading-glasses.png" alt="Power"/><h3>পাওয়ার লেন্স</h3></div>
+    <div class="feature"><img src="https://img.icons8.com/ios-filled/50/000000/return.png" alt="Easy Return"/><h3>সহজ রিটার্ন</h3></div>
+  </section>
+  <section class="section products">
+    <div class="product-card"><img src="https://images.unsplash.com/photo-1596728329721-d2de0e1db7e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunglass 1"/><h4>Classic Black Sunglass</h4><p class="price">৳1999</p><a href="#order" class="cta-button">Order Now</a></div>
+    <div class="product-card"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunglass 2"/><h4>Stylish Aviator</h4><p class="price">৳2499</p><a href="#order" class="cta-button">Order Now</a></div>
+    <div class="product-card"><img src="https://images.unsplash.com/photo-1593696140820-6a1b6d93c7e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunglass 3"/><h4>Premium Lens</h4><p class="price">৳2999</p><a href="#order" class="cta-button">Order Now</a></div>
+  </section>
+  <section class="section video-section"><h2>See it in action</h2><video width="80%" controls poster="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"><source src="https://cdn.pixabay.com/vimeo/299664924/Sunglasses%20Video.mp4?width=1280&hash=bc2d96edfe7d6a599de45761d0ad1805b24b96e5" type="video/mp4">Your browser does not support the video tag.</video></section>
+  <section class="section testimonial"><h2>কাস্টমার রিভিউ</h2><p>"সানগ্লাসের মান অসাধারণ, অর্ডার করার পর ৩ দিনের মধ্যে পেয়ে গেছি।" – রাহাত</p><p>"আমি অনেক খুশি, স্টাইলিশ এবং আরামদায়ক!" – সুমাইয়া</p></section>
+  <section class="section order-form" id="order"><h2>Order Now</h2><form><input type="text" placeholder="আপনার নাম লিখুন" required><input type="tel" placeholder="মোবাইল নাম্বার লিখুন" required><input type="text" placeholder="ঠিকানা লিখুন" required><button type="submit">Order Now</button></form></section>
+  <footer>&copy; 2025 Sunglass Store | Contact: 01234-567890 | <a href="#" style="color:gold;">Facebook</a></footer>
+</body>
+</html>
